@@ -20,7 +20,7 @@ wait==기다려 주세요
 go right to select a region==오른쪽 화살표로 지역을 선택하세요
 Europe==유럽
 USA==미국
-Cata==Cataclysm
+Cata==Cataclysm Classic
 Classic==Classic Era
 BurningCrusade==Burning Crusade
 Retail==Retail
@@ -35,7 +35,7 @@ select character==캐릭터 선택
 enter the name for the new character and press enter, or escape to cancel character creation.==새 캐릭터의 이름을 입력하고 Enter를 누르거나, Escape를 눌러 캐릭터 생성을 취소하세요.
 Failed You already have the maximum number of character on this server.==실패. 이 서버의 캐릭터 수가 최대입니다.
 switching to server. please wait.==서버 변경 중. 기다려 주세요.
-Deleting failed. Type delete again and press enter, or press escape to cancel the deleting process.==삭제하지 못했습니다. 게임이 한국어면 지금삭제를 입력하고 영어면 대문자로 DELETE를 입력한 뒤 Enter를 누르세요. 또는 Escape를 눌러 취소합니다.
+Deleting failed. Type delete again and press enter, or press escape to cancel the deleting process.==삭제하지 못했습니다. 게임이 한국어면 띄어 쓰지 않고 지금삭제를 입력하고 영어면 대문자로 DELETE를 입력한 뒤 Enter를 누르세요. 또는 Escape를 눌러 취소하세요.
 character deleted==캐릭터 삭제됨
 Please wait, the character list is being rebuilt.==캐릭터 목록을 다시 읽습니다. 기다려 주세요.
 Failed. The name is not available, or the names format is not allowed.==실패. 사용할 수 없거나 허용되지 않는 이름입니다.
@@ -45,8 +45,8 @@ switch server==서버 변경
 select region==지역 선택
 select game type==게임 종류 선택
 select voice==음성 선택
-enter delete and press enter, or press escape to cancel the deleting process.==게임이 한국어면 지금삭제를 입력하고 영어면 DELETE를 입력한 뒤 Enter를 누르거나, Escape를 눌러 삭제를 취소하세요.
-press enter to confirm the deletion, or press escape to cancel.==게임이 한국어면 지금삭제를 입력하고 영어면 대문자로 DELETE를 입력한 뒤 Enter를 누르세요. 또는 Escape를 눌러 취소합니다.
+enter delete and press enter, or press escape to cancel the deleting process.==게임이 한국어면 띄어 쓰지 않고 지금삭제를 입력하고 영어면 DELETE를 입력한 뒤 Enter를 누르거나, Escape를 눌러 삭제를 취소하세요.
+press enter to confirm the deletion, or press escape to cancel.==게임이 한국어면 띄어 쓰지 않고 지금삭제를 입력하고 영어면 대문자로 DELETE를 입력한 뒤 Enter를 누르세요. 또는 Escape를 눌러 취소하세요.
 delete character==캐릭터 삭제
 switched to Server==서버 변경됨
 Could not switch server.==서버 변경 실패.
