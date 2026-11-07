@@ -3068,7 +3068,7 @@ RealmNameOnCharScreen(s) {
 ; OCR reads the same name differently from run to run, so compare on letters and
 ; digits only, in lower case.
 RealmNameKey(t) {
-    return StrLower(RegExReplace(t, "[^a-zA-Z0-9]", ""))
+    return StrLower(RegExReplace(t, "[^\p{L}\p{N}]", ""))
 }
 
 ; What realm is the client actually on? Returns state "ok" (matches the pick),
