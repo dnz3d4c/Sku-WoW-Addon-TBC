@@ -1269,11 +1269,19 @@ FvBuild(s, screen) {
             }
             if (name = "")
                 name := line
-            cards.Push({line: name, label: (name = line ? "" : name["text"] ", ") line["text"]})
+            cards.Push({line: name, label: (name = line ? "" : name["text"] ", ") line["text"],
+                level: RegExMatch(line["text"], "\d+", &lv) ? lv[0] : ""})
         }
         FvSort(cards, (a, b) => FvCy(a.line) < FvCy(b.line))   ; top to bottom
-        for i, c in cards
+        for i, c in cards {
             FvT(t, c.label, FvCx(c.line), FvCy(c.line), "char", "", c.label ", " i FvIndexText(i, cards.Length) cards.Length)
+            ; OCR reads a name differently from one read to the next, and the
+            ; client's own narration of a card is kept under the target's key:
+            ; keyed by the name, a silent repeat said the misread name instead
+            ; of what the client said. Place and level stay put; a scrolled
+            ; list brings other levels, so it does not inherit the old words.
+            t[t.Length].id := "char " i " " c.level
+        }
         FvAddLine(s, t, "enter_world", "enterworld")
         l := FvAddLine(s, t, "create_character")
         if (l != "") {
