@@ -139,8 +139,23 @@ DetectGameVersion() {
 ; safe because gDetectedPid is only advanced once we actually act on it.
 ApplyDetectedGametype() {
     global gGametypePin, gHasSetupGametype, gDetectedPid, gDetectedGametype, gBusy
-    if (gGametypePin || gBusy)
+    if gBusy
         return
+    if gGametypePin {
+        ; A pinned game type is never replaced, but the tool still has to know
+        ; WHICH client runs: the Forever speech history is asked for by pid and
+        ; the speech folder sits in the client's folder. The first-start setup
+        ; always pins, so without this the history was never asked for and
+        ; every hover counted as a silent repeat.
+        info := DetectGameVersion()
+        if (info = "" || info.pid = gDetectedPid)
+            return
+        gDetectedPid := info.pid
+        SplitPath(info.exe, , &clientDir)
+        global gDetectedClientDir := clientDir
+        Log("Detect: pid " info.pid " [" info.exe "] - game type pinned to " gHasSetupGametype)
+        return
+    }
     info := DetectGameVersion()
     if (info = "" || info.pid = gDetectedPid)
         return
