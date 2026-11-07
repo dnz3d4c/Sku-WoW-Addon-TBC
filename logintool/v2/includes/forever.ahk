@@ -259,70 +259,70 @@ ForeverCapture() {
 ; From the build's GlobalStrings (globalstrings\ next to the source clone).
 
 global gFvStrings := Map(
-    "login_button", Map("de", "Einloggen", "en", "Log In", "fr", "Connexion"),
-    "account_label", Map("de", "E-Mail oder Telefon", "en", "Email or Phone", "fr", "E-mail ou numéro de téléphone"),
-    "password_label", Map("de", "Passwort", "en", "Password", "fr", "Mot de passe"),
-    "remember", Map("de", "Account speichern", "en", "Remember Account", "fr", "Se souvenir du nom de compte"),
-    "reconnect", Map("de", "Wiederverbinden", "en", "Reconnect", "fr", "Se reconnecter"),
-    "logout", Map("de", "Ausloggen", "en", "Log Out", "fr", "Déconnexion"),
-    "menu", Map("de", "Menü", "en", "Menu", "fr", "Menu"),
-    "create_account", Map("de", "Account erstellen", "en", "Create Account", "fr", "Créer un compte"),
-    "quit", Map("de", "Beenden", "en", "Quit", "fr", "Quitter"),
+    "login_button", Map("de", "Einloggen", "en", "Log In", "fr", "Connexion", "ko", "로그인"),
+    "account_label", Map("de", "E-Mail oder Telefon", "en", "Email or Phone", "fr", "E-mail ou numéro de téléphone", "ko", "이메일 또는 전화번호"),
+    "password_label", Map("de", "Passwort", "en", "Password", "fr", "Mot de passe", "ko", "비밀번호"),
+    "remember", Map("de", "Account speichern", "en", "Remember Account", "fr", "Se souvenir du nom de compte", "ko", "계정명 저장"),
+    "reconnect", Map("de", "Wiederverbinden", "en", "Reconnect", "fr", "Se reconnecter", "ko", "재접속"),
+    "logout", Map("de", "Ausloggen", "en", "Log Out", "fr", "Déconnexion", "ko", "접속 종료"),
+    "menu", Map("de", "Menü", "en", "Menu", "fr", "Menu", "ko", "메뉴"),
+    "create_account", Map("de", "Account erstellen", "en", "Create Account", "fr", "Créer un compte", "ko", "계정 생성"),
+    "quit", Map("de", "Beenden", "en", "Quit", "fr", "Quitter", "ko", "게임 종료"),
     ; SUPER_DISTRICT_TITLE at launch (build 70634); the beta said "Spielstil"
-    "ruleset_title", Map("de", "Wählt Euren Gameplay-Regelsatz", "en", "Choose Your Gameplay Ruleset", "fr", "Choisir votre ensemble de règles"),
-    "ruleset_desc", Map("de", "Ihr könnt nur mit Spielern interagieren, die denselben Regelsatz wählen.", "en", "You will only be able to interact with players who choose the same ruleset.", "fr", "Vous ne pouvez interagir qu’avec les personnages-joueurs qui ont choisi le même ensemble de règles."),
-    "preset_title", Map("de", "Wählt Eure Erfahrungsvoreinstellung", "en", "Choose Your Experience Preset", "fr", "Choisir le préréglage de votre expérience"),
-    "preset_settings", Map("de", "Starteinstellungen:", "en", "Starting Settings:", "fr", "Réglages de départ :"),
-    "select", Map("de", "Auswählen", "en", "Select", "fr", "Sélectionner"),
-    "cancel", Map("de", "Abbrechen", "en", "Cancel", "fr", "Annuler"),
-    "enter_world", Map("de", "Welt betreten", "en", "Enter World", "fr", "Entrer dans le jeu"),
-    "create_character", Map("de", "Charakter erstellen", "en", "Create Character", "fr", "Créer un personnage"),
-    "back", Map("de", "Zurück", "en", "Back", "fr", "Retour"),
-    "nav_menu", Map("de", "MENÜ", "en", "MENU", "fr", "MENU"),
-    "nav_ruleset", Map("de", "REALM-TYP", "en", "RULESET", "fr", "ENSEMBLE DE RÈGLES"),
-    "nav_shop", Map("de", "SHOP", "en", "SHOP", "fr", "BOUTIQUE"),
-    "list_toggle", Map("de", "Charakterliste ein/aus", "en", "Toggle Character List", "fr", "Afficher/masquer la liste de personnages"),
-    "search", Map("de", "Suchen", "en", "Search", "fr", "Recherche"),
-    "customize", Map("de", "Anpassen", "en", "Customize", "fr", "Apparence"),
-    "preview", Map("de", "Vorschau", "en", "Preview", "fr", "Aperçu"),
-    "finish", Map("de", "Beenden", "en", "Finish", "fr", "Terminer"),
-    "next", Map("de", "Weiter", "en", "Next", "fr", "Suivant"),
-    "alliance", Map("de", "ALLIANZ", "en", "ALLIANCE", "fr", "ALLIANCE"),
-    "horde", Map("de", "HORDE", "en", "HORDE", "fr", "HORDE"),
-    "hd_models", Map("de", "Hohe Auflösung für Modelle", "en", "High-Definition Models", "fr", "Modèles en haute définition"),
-    "full_name", Map("de", "Voller Name", "en", "Full Name", "fr", "Nom complet"),
-    "main_name_hint", Map("de", "Hauptname eingeben", "en", "Type Main Name", "fr", "Saisir le nom principal"),
-    "second_name_hint", Map("de", "Zweitname eingeben", "en", "Type Secondary Name", "fr", "Saisir le nom secondaire"),
-    "zone_title", Map("de", "Wählt Euer Startgebiet aus.", "en", "Choose Your Starting Zone", "fr", "Choisissez votre région de départ."),
-    "contract_title", Map("de", "Verhaltenskodex", "en", "Social Contract", "fr", "Contrat social"),
-    "contract_accept", Map("de", "Annehmen", "en", "Accept", "fr", "Accepter"),
-    "contract_decline", Map("de", "Spiel verlassen", "en", "Exit Game", "fr", "Quitter"),
-    "delete_word", Map("de", "LÖSCHEN", "en", "DELETE", "fr", "EFFACER"),
-    "ok", Map("de", "OK", "en", "Okay", "fr", "OK"),
-    "yes", Map("de", "Ja", "en", "Yes", "fr", "Oui"),
-    "no", Map("de", "Nein", "en", "No", "fr", "Non"),
-    "narrator_enable", Map("de", "Aktivieren", "en", "Enable", "fr", "Activer"),
-    "narrator_disable", Map("de", "Deaktivieren", "en", "Disable", "fr", "Désactiver"),
-    "decline", Map("de", "Ablehnen", "en", "Decline", "fr", "Refuser"),
-    "change_realm", Map("de", "Realm wechseln", "en", "Change Realm", "fr", "Autre Royaume"),
-    "done", Map("de", "Fertig", "en", "Done", "fr", "Terminé"),
-    "continue", Map("de", "Fortfahren", "en", "Continue", "fr", "Continuer"),
+    "ruleset_title", Map("de", "Wählt Euren Gameplay-Regelsatz", "en", "Choose Your Gameplay Ruleset", "fr", "Choisir votre ensemble de règles", "ko", "게임 플레이 규칙 선택"),
+    "ruleset_desc", Map("de", "Ihr könnt nur mit Spielern interagieren, die denselben Regelsatz wählen.", "en", "You will only be able to interact with players who choose the same ruleset.", "fr", "Vous ne pouvez interagir qu’avec les personnages-joueurs qui ont choisi le même ensemble de règles.", "ko", "같은 규칙을 선택하는 플레이어들과만 상호작용할 수 있습니다."),
+    "preset_title", Map("de", "Wählt Eure Erfahrungsvoreinstellung", "en", "Choose Your Experience Preset", "fr", "Choisir le préréglage de votre expérience", "ko", "플레이 환경 사전 설정 선택"),
+    "preset_settings", Map("de", "Starteinstellungen:", "en", "Starting Settings:", "fr", "Réglages de départ :", "ko", "초기 설정:"),
+    "select", Map("de", "Auswählen", "en", "Select", "fr", "Sélectionner", "ko", "선택"),
+    "cancel", Map("de", "Abbrechen", "en", "Cancel", "fr", "Annuler", "ko", "취소"),
+    "enter_world", Map("de", "Welt betreten", "en", "Enter World", "fr", "Entrer dans le jeu", "ko", "접속하기"),
+    "create_character", Map("de", "Charakter erstellen", "en", "Create Character", "fr", "Créer un personnage", "ko", "캐릭터 생성"),
+    "back", Map("de", "Zurück", "en", "Back", "fr", "Retour", "ko", "뒤로"),
+    "nav_menu", Map("de", "MENÜ", "en", "MENU", "fr", "MENU", "ko", "메뉴"),
+    "nav_ruleset", Map("de", "REALM-TYP", "en", "RULESET", "fr", "ENSEMBLE DE RÈGLES", "ko", "서버"),
+    "nav_shop", Map("de", "SHOP", "en", "SHOP", "fr", "BOUTIQUE", "ko", "블리자드 샵"),
+    "list_toggle", Map("de", "Charakterliste ein/aus", "en", "Toggle Character List", "fr", "Afficher/masquer la liste de personnages", "ko", "캐릭터 목록 열기/닫기"),
+    "search", Map("de", "Suchen", "en", "Search", "fr", "Recherche", "ko", "검색"),
+    "customize", Map("de", "Anpassen", "en", "Customize", "fr", "Apparence", "ko", "설정"),
+    "preview", Map("de", "Vorschau", "en", "Preview", "fr", "Aperçu", "ko", "미리 보기"),
+    "finish", Map("de", "Beenden", "en", "Finish", "fr", "Terminer", "ko", "완료"),
+    "next", Map("de", "Weiter", "en", "Next", "fr", "Suivant", "ko", "다음"),
+    "alliance", Map("de", "ALLIANZ", "en", "ALLIANCE", "fr", "ALLIANCE", "ko", "얼라이언스"),
+    "horde", Map("de", "HORDE", "en", "HORDE", "fr", "HORDE", "ko", "호드"),
+    "hd_models", Map("de", "Hohe Auflösung für Modelle", "en", "High-Definition Models", "fr", "Modèles en haute définition", "ko", "고해상도 모델"),
+    "full_name", Map("de", "Voller Name", "en", "Full Name", "fr", "Nom complet", "ko", "전체 이름"),
+    "main_name_hint", Map("de", "Hauptname eingeben", "en", "Type Main Name", "fr", "Saisir le nom principal", "ko", "주 이름 입력"),
+    "second_name_hint", Map("de", "Zweitname eingeben", "en", "Type Secondary Name", "fr", "Saisir le nom secondaire", "ko", "보조 이름 입력"),
+    "zone_title", Map("de", "Wählt Euer Startgebiet aus.", "en", "Choose Your Starting Zone", "fr", "Choisissez votre région de départ.", "ko", "시작 지역 선택"),
+    "contract_title", Map("de", "Verhaltenskodex", "en", "Social Contract", "fr", "Contrat social", "ko", "소셜 규약"),
+    "contract_accept", Map("de", "Annehmen", "en", "Accept", "fr", "Accepter", "ko", "확인"),
+    "contract_decline", Map("de", "Spiel verlassen", "en", "Exit Game", "fr", "Quitter", "ko", "게임 종료"),
+    "delete_word", Map("de", "LÖSCHEN", "en", "DELETE", "fr", "EFFACER", "ko", "삭제"),
+    "ok", Map("de", "OK", "en", "Okay", "fr", "OK", "ko", "확인"),
+    "yes", Map("de", "Ja", "en", "Yes", "fr", "Oui", "ko", "예"),
+    "no", Map("de", "Nein", "en", "No", "fr", "Non", "ko", "아니요"),
+    "narrator_enable", Map("de", "Aktivieren", "en", "Enable", "fr", "Activer", "ko", "활성화"),
+    "narrator_disable", Map("de", "Deaktivieren", "en", "Disable", "fr", "Désactiver", "ko", "비활성화"),
+    "decline", Map("de", "Ablehnen", "en", "Decline", "fr", "Refuser", "ko", "거절"),
+    "change_realm", Map("de", "Realm wechseln", "en", "Change Realm", "fr", "Autre Royaume", "ko", "서버 변경"),
+    "done", Map("de", "Fertig", "en", "Done", "fr", "Terminé", "ko", "완료"),
+    "continue", Map("de", "Fortfahren", "en", "Continue", "fr", "Continuer", "ko", "계속"),
     ; the game menu Escape opens (GlueMenuFrame), its buttons in menu order
-    "gamemenu_title", Map("de", "Spielmenü", "en", "Game Menu", "fr", "Menu de jeu"),
-    "gm_options", Map("de", "Optionen", "en", "Options", "fr", "Options"),
-    "gm_store", Map("de", "Shop", "en", "Shop", "fr", "Boutique"),
-    "gm_addons", Map("de", "Addons", "en", "AddOns", "fr", "Add-ons"),
-    "gm_credits", Map("de", "Das Team", "en", "Credits", "fr", "Générique"),
-    "gm_cinematics", Map("de", "Videosequenzen", "en", "Cinematics", "fr", "Cinématiques"),
-    "gm_account", Map("de", "Mein Account", "en", "My Account", "fr", "Mon compte"),
-    "gm_community", Map("de", "Offizielle Webseite", "en", "Community Site", "fr", "Site officiel"),
-    "gm_exit", Map("de", "Spiel verlassen", "en", "Exit Game", "fr", "Quitter"),
-    "gm_close", Map("de", "Schließen", "en", "Close", "fr", "Fermer"),
+    "gamemenu_title", Map("de", "Spielmenü", "en", "Game Menu", "fr", "Menu de jeu", "ko", "게임 메뉴"),
+    "gm_options", Map("de", "Optionen", "en", "Options", "fr", "Options", "ko", "설정"),
+    "gm_store", Map("de", "Shop", "en", "Shop", "fr", "Boutique", "ko", "블리자드 샵"),
+    "gm_addons", Map("de", "Addons", "en", "AddOns", "fr", "Add-ons", "ko", "애드온"),
+    "gm_credits", Map("de", "Das Team", "en", "Credits", "fr", "Générique", "ko", "제작진"),
+    "gm_cinematics", Map("de", "Videosequenzen", "en", "Cinematics", "fr", "Cinématiques", "ko", "동영상"),
+    "gm_account", Map("de", "Mein Account", "en", "My Account", "fr", "Mon compte", "ko", "내 계정"),
+    "gm_community", Map("de", "Offizielle Webseite", "en", "Community Site", "fr", "Site officiel", "ko", "공식 웹사이트"),
+    "gm_exit", Map("de", "Spiel verlassen", "en", "Exit Game", "fr", "Quitter", "ko", "게임 종료"),
+    "gm_close", Map("de", "Schließen", "en", "Close", "fr", "Fermer", "ko", "닫기"),
 )
 
 FvLangKey() {
     l := StrLower(SubStr(gHasSetupLanguage, 1, 2))
-    return (l = "de" || l = "fr") ? l : "en"
+    return (l = "de" || l = "fr" || l = "ko") ? l : "en"
 }
 
 FvS(key) {
@@ -758,7 +758,7 @@ FvIndexRegex() {
 }
 
 FvDropWord() {
-    return Map("de", "Drop-down", "en", "Dropdown", "fr", "Menu déroulant")[FvLangKey()]
+    return Map("de", "Drop-down", "en", "Dropdown", "fr", "Menu déroulant", "ko", "드롭다운")[FvLangKey()]
 }
 
 ; "Frisur, Drop-down, Gescheitelt und lang, 7 von 21": index, count and the
@@ -842,7 +842,7 @@ FvIndexText(i, n) {
     if (n <= 1)
         return ""
     ; NARRATION_INDEX_INFO_FORMAT: "%d von %d", "%d of %d", "%d de %d"
-    return Map("de", " von ", "en", " of ", "fr", " de ")[FvLangKey()]
+    return Map("de", " von ", "en", " of ", "fr", " de ", "ko", " / ")[FvLangKey()]
 }
 
 ; A colour name for a flat swatch pixel, coarse but honest: lightness word plus
@@ -853,13 +853,13 @@ FvColorName(r, g, b) {
     light := (mx + mn) / 510.0
     sat := (mx = mn) ? 0 : (mx - mn) / (255.0 - Abs(mx + mn - 255))
     if (light > 0.9)
-        return Map("de", "weiß", "en", "white", "fr", "blanc")[L]
+        return Map("de", "weiß", "en", "white", "fr", "blanc", "ko", "흰색")[L]
     if (light < 0.12)
-        return Map("de", "schwarz", "en", "black", "fr", "noir")[L]
-    lightWord := Map("de", "hell", "en", "light", "fr", "clair")[L]
-    darkWord := Map("de", "dunkel", "en", "dark", "fr", "foncé")[L]
+        return Map("de", "schwarz", "en", "black", "fr", "noir", "ko", "검은색")[L]
+    lightWord := Map("de", "hell", "en", "light", "fr", "clair", "ko", "밝은")[L]
+    darkWord := Map("de", "dunkel", "en", "dark", "fr", "foncé", "ko", "어두운")[L]
     if (sat < 0.15) {
-        grey := Map("de", "grau", "en", "grey", "fr", "gris")[L]
+        grey := Map("de", "grau", "en", "grey", "fr", "gris", "ko", "회색")[L]
         return (light > 0.6 ? lightWord " " : light < 0.3 ? darkWord " " : "") grey
     }
     if (mx = r)
@@ -868,56 +868,56 @@ FvColorName(r, g, b) {
         h := 60 * (((b - r) / (mx - mn)) + 2)
     else
         h := 60 * (((r - g) / (mx - mn)) + 4)
-    brown := Map("de", "braun", "en", "brown", "fr", "brun")[L]
-    pink := Map("de", "rosa", "en", "pink", "fr", "rose")[L]
+    brown := Map("de", "braun", "en", "brown", "fr", "brun", "ko", "갈색")[L]
+    pink := Map("de", "rosa", "en", "pink", "fr", "rose", "ko", "분홍색")[L]
     ; Pale tones at the red end of the hue circle are pink (fair skin). Dark
     ; ones stay red: Skyborne skins really are crimson (seen on screen
     ; 2026-10-27, swatch 77,29,41).
     if (h < 12 || h >= 340)
-        hue := (light > 0.6 && sat < 0.8) ? pink : Map("de", "rot", "en", "red", "fr", "rouge")[L]
+        hue := (light > 0.6 && sat < 0.8) ? pink : Map("de", "rot", "en", "red", "fr", "rouge", "ko", "빨간색")[L]
     else if (h < 42)
-        hue := (light < 0.55 || sat < 0.55) ? brown : Map("de", "orange", "en", "orange", "fr", "orange")[L]
+        hue := (light < 0.55 || sat < 0.55) ? brown : Map("de", "orange", "en", "orange", "fr", "orange", "ko", "주황색")[L]
     else if (h < 68)
-        hue := (light < 0.45) ? brown : Map("de", "gelb", "en", "yellow", "fr", "jaune")[L]
+        hue := (light < 0.45) ? brown : Map("de", "gelb", "en", "yellow", "fr", "jaune", "ko", "노란색")[L]
     else if (h < 95)
-        hue := Map("de", "gelbgrün", "en", "yellow-green", "fr", "vert-jaune")[L]
+        hue := Map("de", "gelbgrün", "en", "yellow-green", "fr", "vert-jaune", "ko", "연두색")[L]
     else if (h < 160)
-        hue := Map("de", "grün", "en", "green", "fr", "vert")[L]
+        hue := Map("de", "grün", "en", "green", "fr", "vert", "ko", "녹색")[L]
     else if (h < 190)
-        hue := Map("de", "türkis", "en", "turquoise", "fr", "turquoise")[L]
+        hue := Map("de", "türkis", "en", "turquoise", "fr", "turquoise", "ko", "청록색")[L]
     else if (h < 215)
-        hue := Map("de", "himmelblau", "en", "sky blue", "fr", "bleu ciel")[L]
+        hue := Map("de", "himmelblau", "en", "sky blue", "fr", "bleu ciel", "ko", "하늘색")[L]
     else if (h < 255)
-        hue := Map("de", "blau", "en", "blue", "fr", "bleu")[L]
+        hue := Map("de", "blau", "en", "blue", "fr", "bleu", "ko", "파란색")[L]
     else if (h < 290)
-        hue := Map("de", "violett", "en", "purple", "fr", "violet")[L]
+        hue := Map("de", "violett", "en", "purple", "fr", "violet", "ko", "보라색")[L]
     else if (h < 320)
-        hue := Map("de", "magenta", "en", "magenta", "fr", "magenta")[L]
+        hue := Map("de", "magenta", "en", "magenta", "fr", "magenta", "ko", "자홍색")[L]
     else
-        hue := Map("de", "rosa", "en", "pink", "fr", "rose")[L]
+        hue := Map("de", "rosa", "en", "pink", "fr", "rose", "ko", "분홍색")[L]
     ; five lightness steps and a saturation word, so a palette of eight blues
     ; does not come out as three identical names
     if (light > 0.78)
-        shade := Map("de", "sehr hell", "en", "very light", "fr", "très clair")[L]
+        shade := Map("de", "sehr hell", "en", "very light", "fr", "très clair", "ko", "매우 밝은")[L]
     else if (light > 0.6)
         shade := lightWord
     else if (light > 0.4)
-        shade := Map("de", "mittel", "en", "medium", "fr", "moyen")[L]
+        shade := Map("de", "mittel", "en", "medium", "fr", "moyen", "ko", "중간")[L]
     else if (light > 0.22)
         shade := darkWord
     else
-        shade := Map("de", "sehr dunkel", "en", "very dark", "fr", "très foncé")[L]
+        shade := Map("de", "sehr dunkel", "en", "very dark", "fr", "très foncé", "ko", "매우 어두운")[L]
     ; five saturation steps, the middle one unnamed (two skin swatches,
     ; saturation 0.58 and 0.74, were both just "light orange")
     tone := ""
     if (sat < 0.25)
-        tone := Map("de", "blass", "en", "pale", "fr", "pâle")[L] " "
+        tone := Map("de", "blass", "en", "pale", "fr", "pâle", "ko", "옅은")[L] " "
     else if (sat < 0.45)
-        tone := Map("de", "matt", "en", "muted", "fr", "terne")[L] " "
+        tone := Map("de", "matt", "en", "muted", "fr", "terne", "ko", "탁한")[L] " "
     else if (sat >= 0.85)
-        tone := Map("de", "leuchtend", "en", "vivid", "fr", "éclatant")[L] " "
+        tone := Map("de", "leuchtend", "en", "vivid", "fr", "éclatant", "ko", "선명한")[L] " "
     else if (sat >= 0.65)
-        tone := Map("de", "kräftig", "en", "strong", "fr", "vif")[L] " "
+        tone := Map("de", "kräftig", "en", "strong", "fr", "vif", "ko", "진한")[L] " "
     return shade " " tone hue
 }
 
@@ -1068,6 +1068,9 @@ global gFvPresetCards := Map(
     "en_button", "Button",
     "fr", [["Classique", "Une présentation plus classique offrant des graphismes simplifiés, des modèles de personnages standard et moins de fonctionnalités d’interface modernes activées par défaut. Vous bénéficiez ainsi d’une expérience plus épurée et plus fidèle à l’esprit du jeu d’origine, avec moins d’aide automatique.", "Modèles de personnages en définition standard", "Affichage des points d’intérêt et objectifs désactivé", "Sac unique désactivé", "Transmogrifications désactivées", "Par défaut, lié aux raccourcis de la caméra.", "Configuration de l’IU classique"],
            ["Améliorée", "Une présentation mise à jour offrant une qualité visuelle améliorée et des fonctionnalités d’interface supplémentaires activées par défaut.", "Modèles de personnages en haute définition", "Affichage des points d’intérêt et objectifs activé", "Sac unique activé", "Transmogrifications activées", "Par défaut, lié aux raccourcis de déplacement latéral.", "Configuration de l’IU centralisée"]],
+    "ko", [["클래식", "간소한 시각 효과와 표준 캐릭터 모델을 사용하는 전통적인 화면 구성입니다.", "표준 해상도 캐릭터 모델", "퀘스트 관심 지점 및 목표 표시 끄기", "가방 통합 끄기", "형상변환 끄기", "기본적으로 카메라 회전 키보드 단축키로 설정", "클래식 화면 사용자 인터페이스 구성"],
+           ["최신", "시각적 구현도를 높이고 추가 인터페이스 요소를 기본으로 활성화한 최신 화면 구성입니다.", "고해상도 캐릭터 모델", "퀘스트 관심 지점 및 목표 표시 켜기", "가방 통합 켜기", "형상변환 켜기", "기본적으로 옆이동 키보드 단축키로 설정", "중앙 집중 사용자 인터페이스 구성"]],
+    "ko_button", "버튼",
     "fr_button", "Bouton"
 )
 
@@ -1980,13 +1983,13 @@ FvNameCheckSay(state) {
     switch state {
     case "green":
         return (gFvNameCheck.green != "") ? gFvNameCheck.green
-             : Map("de", "Name verfügbar", "en", "Name available", "fr", "Nom disponible")[L]
+             : Map("de", "Name verfügbar", "en", "Name available", "fr", "Nom disponible", "ko", "사용 가능한 이름")[L]
     case "red":
         if (gFvNameCheck.reds.Count = 1 || (gFvNameCheck.red != "" && gFvNameCheck.redEdit = gFvNameEdits))
             return gFvNameCheck.red
-        return Map("de", "Name nicht verfügbar", "en", "Name not available", "fr", "Nom indisponible")[L]
+        return Map("de", "Name nicht verfügbar", "en", "Name not available", "fr", "Nom indisponible", "ko", "사용할 수 없는 이름")[L]
     case "none":
-        return Map("de", "Noch kein Ergebnis der Namensprüfung", "en", "No name check result yet", "fr", "Pas encore de résultat pour le nom")[L]
+        return Map("de", "Noch kein Ergebnis der Namensprüfung", "en", "No name check result yet", "fr", "Pas encore de résultat pour le nom", "ko", "이름 확인 결과 없음")[L]
     }
     return ""
 }
