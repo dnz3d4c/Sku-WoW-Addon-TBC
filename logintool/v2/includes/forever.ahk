@@ -536,6 +536,13 @@ FvSenseTick() {
                     }
                 } else if (r is Map && r.Has("error")) {
                     Log("Forever: sense error " r["error"])
+                    gFv.targets := []
+                    gFv.index := 0
+                    gFv.s := ""
+                    gFv.lastHover := ""
+                    gFvAsync.refThumb := ""
+                    gFvAsync.wantOcr := true
+                    SenseStop()
                 }
             } catch as e {
                 Log("Forever: sense parse failed: " e.Message)
