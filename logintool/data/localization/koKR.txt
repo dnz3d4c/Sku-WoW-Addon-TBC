@@ -1,0 +1,179 @@
+﻿English==영어
+German / Deutsch==독일어
+French / Français==프랑스어
+Russian / Русский==러시아어
+Spanish / Español==스페인어
+Setup completed. Start the game now.==설정 완료. 이제 게임을 시작하세요.
+selected==선택됨
+go right to select a voice==오른쪽 화살표로 음성을 선택하세요.
+go right to select a game type==오른쪽 화살표로 게임 종류를 선택하세요.
+go right to select a language==오른쪽 화살표로 언어를 선택하세요.
+pause mode==일시 정지 모드
+play mode==게임 모드
+login mode==로그인 모드
+login mode for==로그인 모드:
+script exited==종료됨
+select language==언어 선택
+main menu==주 메뉴
+selected, restart script to apply==선택됨. 적용하려고 다시 시작합니다. 기다려 주세요.
+wait==기다려 주세요.
+go right to select a region==오른쪽 화살표로 지역을 선택하세요.
+Europe==유럽
+USA==미국
+Cata==대격변
+Classic==클래식 시대
+BurningCrusade==불타는 성전
+Retail==최신 확장팩
+Not_available==사용 불가
+Something went wrong. Please restart the game and try again.==오류가 발생했습니다. 게임을 다시 시작하고 시도하세요.
+you don't have any characters on the selected server==선택한 서버에 캐릭터가 없습니다.
+character==캐릭터
+this race is locked for your account. Try a different race.==이 종족은 잠겨 있습니다. 다른 종족을 선택하세요.
+create new character==새 캐릭터 생성
+login with selected character==선택한 캐릭터로 접속
+select character==캐릭터 선택
+enter the name for the new character and press enter, or escape to cancel character creation.==캐릭터 이름을 입력하고 Enter를 누르세요. Escape로 취소합니다.
+Failed You already have the maximum number of character on this server.==실패. 이 서버의 캐릭터 수가 최대입니다.
+switching to server. please wait.==서버를 변경합니다. 기다려 주세요.
+Deleting failed. Type delete again and press enter, or press escape to cancel the deleting process.==삭제하지 못했습니다. 게임이 요구하는 삭제 확인 문구를 입력하고 Enter를 누르세요. Escape로 취소합니다.
+character deleted==캐릭터가 삭제되었습니다.
+Please wait, the character list is being rebuilt.==캐릭터 목록을 다시 읽습니다. 기다려 주세요.
+Failed. The name is not available, or the names format is not allowed.==이미 사용 중이거나 허용되지 않는 이름입니다.
+Character created==캐릭터가 생성되었습니다.
+Empty - No characters on this server.==이 서버에 캐릭터가 없습니다.
+switch server==서버 변경
+select region==지역 선택
+select game type==게임 종류 선택
+select voice==음성 선택
+enter delete and press enter, or press escape to cancel the deleting process.==게임이 요구하는 삭제 확인 문구를 입력하고 Enter를 누르세요. Escape로 취소합니다.
+press enter to confirm the deletion, or press escape to cancel.==게임이 요구하는 삭제 확인 문구를 입력하고 Enter를 누르세요. Escape로 취소합니다.
+delete character==캐릭터 삭제
+switched to Server==변경된 서버:
+Could not switch server.==서버를 변경하지 못했습니다.
+The server is full. You are in queue.==서버가 가득 찼습니다. 접속 대기 중입니다.
+Please wait.==기다려 주세요.
+Creation is canceled. Please wait.==생성이 취소되었습니다. 기다려 주세요.
+Deleting is canceled. Please wait==삭제가 취소되었습니다. 기다려 주세요.
+setup mode==초기 설정 모드
+server full. Waiting in queue.==서버가 가득 찼습니다. 접속 대기 중입니다.
+character number:==캐릭터 번호:
+Fail. Client is reporting incorrect language.==서버와 게임 언어가 맞지 않아 서버를 변경하지 못했습니다.
+Exile's_Reach==추방자의 해안
+Race_starting_zone==종족 시작 지역
+male==남성
+female==여성
+Alliance==얼라이언스
+Horde==호드
+Human==인간
+Dwarf==드워프
+Night_Elf==나이트 엘프
+Gnome==노움
+Draenei==드레나이
+Worgen==늑대인간
+Pandaren_(Alliance)==판다렌 얼라이언스
+Dracthyr_(Alliance)==드랙티르 얼라이언스
+Void_Elf==공허 엘프
+Light_Forge_Draenei==빛벼림 드레나이
+Dark_Iron_Dwarf==검은무쇠 드워프
+Kul_Tiran==쿨 티란
+Mecha_Gnome==기계노움
+Orc==오크
+Undead==언데드
+Tauren==타우렌
+Troll==트롤
+Blood_Elf==블러드 엘프
+Goblin==고블린
+Pandaren_(Horde)==판다렌 호드
+Dracthyr_(Horde)==드랙티르 호드
+Night_Borne==나이트본
+High_Mountain_Tauren==높은산 타우렌
+Mag_Har_Ork==마그하르 오크
+Zandalari_Troll==잔달라 트롤
+Vulpera==불페라
+Warrior==전사
+Hunter==사냥꾼
+Mage==마법사
+Rogue==도적
+Priest==사제
+Warlock==흑마법사
+Paladin==성기사
+Druid==드루이드
+Shaman==주술사
+Monk==수도사
+Demon_Hunter==악마사냥꾼
+Death_Knight==죽음의 기사
+Evoker==기원사
+Version==버전
+Anniversary==기념 서버
+hardcore==하드코어
+hardcore_pve==하드코어 일반
+hardcore_pvp==하드코어 PvP
+hardcore_rp==하드코어 역할 연기
+addons==애드온
+activate all addons==모든 애드온 켜기
+deactivate all addons==모든 애드온 끄기
+load out of date addons==구버전 애드온 불러오기
+yes==예
+no==아니요
+all addons activated==모든 애드온을 켰습니다.
+all addons deactivated==모든 애드온을 껐습니다.
+out of date addons will be loaded==구버전 애드온을 불러옵니다.
+out of date addons will not be loaded==구버전 애드온을 불러오지 않습니다.
+addon menu only available on character selection screen==애드온 메뉴는 캐릭터 선택 화면에서만 사용할 수 있습니다.
+Unknown screen. Close the dialog in the game, then press Alt F1 twice.==알 수 없는 화면입니다. 게임에서 창을 닫은 뒤 Alt F1을 두 번 누르세요.
+The screen recognition textures are missing from the game folder. Please run the Sku installer to reinstall the login tool.==게임 폴더에 화면 인식 파일이 없습니다. Sku 설치 프로그램으로 로그인 툴을 다시 설치하세요.
+Login tool version==로그인 툴 버전
+The character list may be incomplete. Press Alt F1 twice to rebuild it.==캐릭터 목록이 불완전할 수 있습니다. Alt F1을 두 번 눌러 다시 읽으세요.
+The game has opened the server selection.==서버 선택 창이 열렸습니다.
+close server selection==서버 선택 닫기
+server selection closed==서버 선택 창을 닫았습니다.
+The tool does not know this dialog yet. Answer it in the game.==아직 지원하지 않는 창입니다. 게임에서 직접 선택하세요.
+Press Enter to agree, or press Escape to decline.==Enter로 동의하고 Escape로 거절합니다.
+Agreed. Connecting to the server. Please wait.==동의했습니다. 서버에 연결합니다. 기다려 주세요.
+Declined.==거절했습니다.
+select category==분류 선택
+this category holds no servers==이 분류에 서버가 없습니다.
+the server list did not load. please try again.==서버 목록을 불러오지 못했습니다. 다시 시도하세요.
+The game is still connecting. Press Escape to cancel.==연결 중입니다. Escape로 취소합니다.
+the server list may be incomplete.==서버 목록이 불완전할 수 있습니다.
+This game version is not supported yet.==아직 지원하지 않는 게임 버전입니다.
+game version detected==감지된 게임 버전
+detect game type automatically==게임 종류 자동 감지
+game type is detected automatically now==이제 게임 종류를 자동으로 감지합니다.
+login screen, not logged in==로그인 화면. 접속되지 않았습니다.
+Not logged in. Either there is no connection to the server, or account name and password still have to be entered in the game.==접속되지 않았습니다. 서버 연결을 확인하거나 게임에서 계정명과 비밀번호를 입력하세요.
+account name==계정명
+password==비밀번호
+log in==로그인
+save account name==계정명 저장
+empty==비어 있음
+on==켜짐
+off==꺼짐
+Type now. Enter ends the entry, Escape leaves it.==입력하세요. Enter로 마치고 Escape로 나갑니다.
+Type now. The password is never read back. Enter ends the entry, Escape leaves it.==비밀번호를 입력하세요. 비밀번호는 읽지 않습니다. Enter로 마치고 Escape로 나갑니다.
+Entry ended.==입력을 마쳤습니다.
+Logging in. Please wait.==로그인 중입니다. 기다려 주세요.
+The login did not go through.==로그인하지 못했습니다.
+This is not available on this screen.==이 화면에서는 사용할 수 없습니다.
+No characters on this realm yet.==이 서버에 캐릭터가 없습니다.
+The server was not found in the list. The list is being read again.==목록에서 서버를 찾지 못했습니다. 다시 읽습니다.
+Attention. The game is on a different server:==주의. 게임이 다른 서버에 있습니다:
+Change the server again before you play here.==플레이하기 전에 서버를 다시 변경하세요.
+Agreed. Please wait.==동의했습니다. 기다려 주세요.
+The game is starting. Please wait.==게임을 시작합니다. 기다려 주세요.
+The hardcore rules are still open.==하드코어 규칙 창이 아직 열려 있습니다.
+Blizzard's social contract is open. Accepting it, please wait.==블리자드 소셜 규약에 동의합니다. 기다려 주세요.
+Social contract accepted.==소셜 규약에 동의했습니다.
+The social contract could not be accepted. Sighted help is needed once: scroll the text to the end and press accept.==소셜 규약에 동의하지 못했습니다. 본문을 끝까지 내린 뒤 확인을 눌러 주세요.
+The PvP realm warning is still open.==PvP 서버 경고 창이 아직 열려 있습니다.
+no voices found, press enter to keep the system voice==음성을 찾지 못했습니다. Enter를 누르면 시스템 음성을 유지합니다.
+keeping the system voice==시스템 음성을 유지합니다.
+this voice does not work, choose another one==이 음성이 작동하지 않습니다. 다른 음성을 선택하세요.
+Forever==와우 포에버
+Forever mode: the game reads the screen itself. Press Control Alt F3 to save a screenshot for calibration.==포에버 모드에서는 게임이 화면을 읽습니다. 인식 보정용 화면을 저장하려면 Control Alt F3을 누르세요.
+screenshot saved==화면 저장됨
+narration settings written for Forever==포에버 화면 낭독 설정을 저장했습니다.
+nothing to select on this screen==이 화면에는 선택할 항목이 없습니다.
+typing mode, Enter or Escape to leave==입력 모드입니다. Enter 또는 Escape로 나갑니다.
+Korean / 한국어==한국어
+Korea==한국
