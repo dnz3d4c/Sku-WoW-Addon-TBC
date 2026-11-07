@@ -19,7 +19,7 @@ SenseExePath() {
 }
 
 SenseOcrLang() {
-    langMap := Map("deDE", "de-DE", "enEN", "en-US", "frFR", "fr-FR", "ruRU", "ru-RU", "esES", "es-ES")
+    langMap := Map("deDE", "de-DE", "enEN", "en-US", "frFR", "fr-FR", "ruRU", "ru-RU", "esES", "es-ES", "koKR", "ko-KR")
     return langMap.Has(String(gHasSetupLanguage)) ? langMap[String(gHasSetupLanguage)] : "en-US"
 }
 
