@@ -825,15 +825,23 @@ global gLevelWords := ["Stufe", "Level", "Niveau", "Nivel", "Уровень"]
 
 BlockIsCharacter(detailLines) {
     for line in detailLines {
-        for word in gLevelWords {
-            if InStr(line, word)
-                return true
-        }
+        if IsLevelLine(line)
+            return true
     }
     return false
 }
 
+; Korean puts the level first ("36 레벨 사제", CHARACTER_SELECT_INFO
+; "%d 레벨 %s"). OCR misreads the level word in small windows ("15 해일
+; 사남꾼"), and a name may contain it ("레벨이어야"), so the line is known by
+; its shape: a level 1-99 and two words, or a number right before the word.
+IsKoreanLevelLine(text) {
+    return RegExMatch(text, "^\s*[1-9]\d?\s+\S+\s+\S") || RegExMatch(text, "\d\s*레벨")
+}
+
 IsLevelLine(text) {
+    if (gHasSetupLanguage = "koKR")
+        return IsKoreanLevelLine(text)
     for word in gLevelWords {
         if InStr(text, word)
             return true
