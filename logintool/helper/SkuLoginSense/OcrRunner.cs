@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Drawing.Imaging;
 using System.IO;
 using Windows.Globalization;
 using Windows.Graphics.Imaging;
@@ -58,7 +60,31 @@ namespace SkuLoginSense
 
             try
             {
-                SoftwareBitmap sb = ToSoftwareBitmap(target);
+                // Korean glyphs in WoW's gold-on-dark buttons are missed at
+                // native size. Enlarge and invert luminance for Windows OCR.
+                // All rectangles below are mapped back to original pixels.
+                double scale = 1;
+                Bitmap prepared = null;
+                if (engine.RecognizerLanguage.LanguageTag.StartsWith("ko", StringComparison.OrdinalIgnoreCase))
+                {
+                    scale = Math.Min(2.0, (double)OcrEngine.MaxImageDimension / Math.Max(target.Width, target.Height));
+                    prepared = new Bitmap((int)(target.Width * scale), (int)(target.Height * scale), PixelFormat.Format32bppArgb);
+                    using (var g = Graphics.FromImage(prepared))
+                    using (var attributes = new ImageAttributes())
+                    {
+                        attributes.SetColorMatrix(new ColorMatrix(new[] {
+                            new float[] {-.299f,-.299f,-.299f,0,0},
+                            new float[] {-.587f,-.587f,-.587f,0,0},
+                            new float[] {-.114f,-.114f,-.114f,0,0},
+                            new float[] {0,0,0,1,0},
+                            new float[] {1,1,1,0,1}
+                        }));
+                        g.InterpolationMode = InterpolationMode.HighQualityBicubic;
+                        g.DrawImage(target, new Rectangle(0,0,prepared.Width,prepared.Height), 0,0,target.Width,target.Height,GraphicsUnit.Pixel,attributes);
+                    }
+                }
+                try {
+                SoftwareBitmap sb = ToSoftwareBitmap(prepared ?? target);
                 using (sb)
                 {
                     var result = engine.RecognizeAsync(sb).AsTask().GetAwaiter().GetResult();
@@ -77,14 +103,15 @@ namespace SkuLoginSense
                         lines.Add(new OcrLine
                         {
                             Text = line.Text,
-                            X = (int)minX + dx,
-                            Y = (int)minY + dy,
-                            W = (int)(maxX - minX),
-                            H = (int)(maxY - minY),
+                            X = (int)(minX / scale) + dx,
+                            Y = (int)(minY / scale) + dy,
+                            W = (int)Math.Ceiling((maxX - minX) / scale),
+                            H = (int)Math.Ceiling((maxY - minY) / scale),
                         });
                     }
                     return lines;
                 }
+                } finally { prepared?.Dispose(); }
             }
             finally
             {
