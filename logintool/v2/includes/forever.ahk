@@ -1151,11 +1151,7 @@ FvLeadingInt(text) {
 }
 
 FvHasLevelWord(text) {
-    for word in gLevelWords {
-        if InStr(text, word)
-            return true
-    }
-    return false
+    return IsLevelLine(text)
 }
 
 ; All readable lines as targets - the fallback for a screen the tool has no
