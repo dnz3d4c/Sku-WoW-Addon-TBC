@@ -821,7 +821,7 @@ AcceptContract(s := "") {
 ; A character block's middle line is "<Level> N <Class>" - the localized level
 ; word is the reliable signal that a block is a character and not the realm
 ; header ("Realm wechseln") or a bottom button ("Neuen Charakter erstellen").
-global gLevelWords := ["Stufe", "Level", "Niveau", "Nivel", "Уровень"]
+global gLevelWords := ["Stufe", "Level", "Niveau", "Nivel", "Уровень", "레벨"]
 
 BlockIsCharacter(detailLines) {
     for line in detailLines {
