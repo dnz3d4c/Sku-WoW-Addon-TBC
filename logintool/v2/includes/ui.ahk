@@ -8,7 +8,7 @@
 ; the WoW process (hard rule).
 
 WowWinTitle() {
-    for title in ["World of Warcraft", "WORLD OF WARCRAFT"] {
+    for title in ["월드 오브 워크래프트", "World of Warcraft", "WORLD OF WARCRAFT"] {
         if WinExist(title)
             return title
     }
@@ -17,7 +17,7 @@ WowWinTitle() {
 
 IsWoWWindowFocus() {
     SetTitleMatchMode(3)
-    return WinActive("World of Warcraft") || WinActive("WORLD OF WARCRAFT")
+    return WinActive("월드 오브 워크래프트") || WinActive("World of Warcraft") || WinActive("WORLD OF WARCRAFT")
 }
 
 ; Client area of the game window in screen coordinates.
