@@ -849,7 +849,7 @@ FvIndexText(i, n) {
     if (n <= 1)
         return ""
     ; NARRATION_INDEX_INFO_FORMAT: "%d von %d", "%d of %d", "%d de %d"
-    return Map("de", " von ", "en", " of ", "fr", " de ", "ko", " / ")[FvLangKey()]
+    return Map("de", " von ", "en", " of ", "fr", " de ", "ko", " of ")[FvLangKey()]
 }
 
 ; A colour name for a flat swatch pixel, coarse but honest: lightness word plus
@@ -909,7 +909,7 @@ FvColorName(r, g, b) {
     else if (light > 0.6)
         shade := lightWord
     else if (light > 0.4)
-        shade := Map("de", "mittel", "en", "medium", "fr", "moyen", "ko", "중간")[L]
+        shade := Map("de", "mittel", "en", "medium", "fr", "moyen", "ko", "중간 밝기의")[L]
     else if (light > 0.22)
         shade := darkWord
     else
@@ -924,7 +924,7 @@ FvColorName(r, g, b) {
     else if (sat >= 0.85)
         tone := Map("de", "leuchtend", "en", "vivid", "fr", "éclatant", "ko", "선명한")[L] " "
     else if (sat >= 0.65)
-        tone := Map("de", "kräftig", "en", "strong", "fr", "vif", "ko", "진한")[L] " "
+        tone := Map("de", "kräftig", "en", "strong", "fr", "vif", "ko", "강한")[L] " "
     return shade " " tone hue
 }
 
@@ -1994,13 +1994,13 @@ FvNameCheckSay(state) {
     switch state {
     case "green":
         return (gFvNameCheck.green != "") ? gFvNameCheck.green
-             : Map("de", "Name verfügbar", "en", "Name available", "fr", "Nom disponible", "ko", "사용 가능한 이름")[L]
+             : Map("de", "Name verfügbar", "en", "Name available", "fr", "Nom disponible", "ko", "이름 사용 가능")[L]
     case "red":
         if (gFvNameCheck.reds.Count = 1 || (gFvNameCheck.red != "" && gFvNameCheck.redEdit = gFvNameEdits))
             return gFvNameCheck.red
-        return Map("de", "Name nicht verfügbar", "en", "Name not available", "fr", "Nom indisponible", "ko", "사용할 수 없는 이름")[L]
+        return Map("de", "Name nicht verfügbar", "en", "Name not available", "fr", "Nom indisponible", "ko", "이름 사용 불가")[L]
     case "none":
-        return Map("de", "Noch kein Ergebnis der Namensprüfung", "en", "No name check result yet", "fr", "Pas encore de résultat pour le nom", "ko", "이름 확인 결과 없음")[L]
+        return Map("de", "Noch kein Ergebnis der Namensprüfung", "en", "No name check result yet", "fr", "Pas encore de résultat pour le nom", "ko", "아직 이름 확인 결과 없음")[L]
     }
     return ""
 }
